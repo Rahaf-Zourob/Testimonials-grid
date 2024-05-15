@@ -1,0 +1,39 @@
+main,
+main section.right__section div.rightsec__up,
+main section.right__section div.rightsec__down {
+    grid-template-columns: 1fr;
+}
+
+.main__grid,
+main section.right__section div.rightsec__up,
+main section.right__section div.rightsec__down {
+    gap: 1rem
+}
+
+main section article strong {
+    font-size: 1.22rem;
+}
+
+article#articleR_1 {
+    background-position: top right 1rem;
+}
+
+@media (max-width:375px) {
+    main section article {
+        padding: 1.5rem;
+    }
+
+    main section article .about__user img {
+        width: 15%;
+    }
+
+    main section article div.about__user .info :is(.name, .graduate) {
+        font-size: .9rem;
+    }
+
+    main section article strong {
+        margin: .9rem 0;
+        line-height: 1.6rem;
+    }
+
+}
