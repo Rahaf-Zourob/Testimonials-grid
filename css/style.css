@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Barlow Semi Condensed;
+    src: url(../fonts/BarlowSemiCondensed-Regular.ttf);
+}
+
+:root {
+    --moderate-iolet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --primary-font: Barlow Semi Condensed
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 6%;
+    background-color: var(--light-grayish-blue);
+    font-family: var(--primary-font);
+}
+
+.fontc__white {
+    color: var(--white);
+}
+
+.main__grid {
+    display: grid;
+    column-gap: 1.5rem;
+}
+
+main {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+
+main section.right__section {
+    row-gap: 1.5rem;
+    grid-template-rows: repeat(2, auto);
+}
+
+main section.right__section div.rightsec__up {
+    grid-template-columns: 2fr 1fr;
+}
+
+main section.right__section div.rightsec__down {
+    grid-template-columns: 1fr 2fr;
+}
+
+main section article {
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+article#articleR_1 {
+    background-color: var(--moderate-iolet);
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-position: top right 5rem;
+    background-repeat: no-repeat;
+}
+
+article#articleR_2 {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+article#articleR_3 {
+    background-color: var(--white);
+}
+
+article#articleR__4 {
+    background-color: var(--very-dark-blackish-blue);
+}
+
+article#articleL {
+    background-color: var(--white);
+}
+
+
+main section article div.about__user {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+main section article div.about__user img {
+    border-radius: 50%;
+}
+
+main section article#articleR_1 div.about__user img {
+    border: 3px solid var(--light-gray);
+}
+main section article#articleR__4 div.about__user img{
+    border: 3px solid var(--moderate-iolet);
+}
+main section article div.about__user .info {
+    display: inherit;
+    flex-direction: column;
+}
+
+main section article div.about__user .info .name {
+    font-weight: 600;
+}
+
+main section article div.about__user .info .graduate {
+    opacity: 50%;
+}
+
+main section article strong {
+    display: block;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+}
+
+main section article blockquote {
+    opacity: 70%;
+    font-weight: 500;
+    font-size: .88rem;
+}
+
+article#articleL blockquote {
+    font-size: 1rem;
+}
